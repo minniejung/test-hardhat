@@ -1,3 +1,12 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+
+console.log("✅ Loaded PRIVATE_KEY:", process.env.PRIVATE_KEY?.slice(0, 10));
+console.log(
+  "✅ Loaded INFURA_POLYGON_AMOY_URL:",
+  process.env.INFURA_POLYGON_AMOY_URL
+);
+
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
